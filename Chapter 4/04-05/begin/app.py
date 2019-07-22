@@ -18,7 +18,6 @@ app.config['MAIL_PASSWORD'] = os.environ['MAIL_PASSWORD']
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 jwt = JWTManager(app)
-mail = Mail(app)
 
 
 @app.cli.command('db_create')
